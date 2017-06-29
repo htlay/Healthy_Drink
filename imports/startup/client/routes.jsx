@@ -4,6 +4,8 @@ import { Router, Route, IndexRedirect, browserHistory} from 'react-router';
 import HomeContainer from '/imports/ui/container/HomeContainer.jsx';
 import ProductContainer from '/imports/ui/container/ProductContainer.jsx';
 import MainLayout from '/imports/ui/layout/MainLayout.jsx';
+import ProductInsert from '/imports/ui/components/ProductInsert.jsx';
+
 //import ReviewLayout from '/imports/ui/layout/ReviewLayout.jsx';
 export default () => (
 
@@ -11,6 +13,8 @@ export default () => (
     <Route component={MainLayout}>
       <Route path="/" component={HomeContainer}/>
       <Route path="/product/:id" component={ProductContainer} />
+      <Route path="/insert" component={ProductInsert} />
+
     </Route>
   </Router>
 )
