@@ -51,18 +51,6 @@ export default class ProductEdit extends Component {
                 <input ref="price" type="number" className="form-control" id="inputPrice" placeholder="Product Price"/>
               </div>
             </div>
-            {/* <div className="form-group">
-              <label htmlFor="inputFlavor" className="col-sm-2 control-label">Flavor</label>
-              <div className="col-sm-10">
-                <input ref="flavor" type="text" className="form-control" id="inputFlavor" placeholder="Product Flavor" />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="inputVolume" className="col-sm-2 control-label">Volume</label>
-              <div className="col-sm-10">
-                <input ref="volume" type="text" className="form-control" id="inputVolume" placeholder="Product Volume" />
-              </div>
-            </div> */}
             <div className="form-group">
               <div className="col-sm-offset-2 col-sm-10">
                 <button onClick ={updateProduct} type="submit" className="btn btn-default">Submit</button>

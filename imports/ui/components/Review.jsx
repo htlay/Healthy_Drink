@@ -1,4 +1,4 @@
-/*import React, {Component} from 'react';
+import React, {Component} from 'react';
 import DisplayReivew from '/imports/ui/components/DisplayReview.jsx';
 export default class Review extends Component {
 
@@ -50,4 +50,4 @@ export default class Review extends Component {
       </div>
     )
   }
-}*/
+}
