@@ -10,7 +10,8 @@ Meteor.methods({
     let updateValue = {
       name: product.name,
       description: product.description,
-      volume: product.volume
+      // volume: product.volume,
+      price: product.price
     }
 
     let productUpdate = Products.update({_id: id}, {$set: updateValue});

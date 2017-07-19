@@ -18,10 +18,7 @@ export default class ProductDetail extends Component {
               <strong>Product Name: </strong>
               {product.name}
             </p>
-            <p>
-              <strong>Flavor: </strong>
-              {product.flavor}
-            </p>
+
             <p>
               <strong>Price: </strong>
               {accounting.formatMoney(product.price)}

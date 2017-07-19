@@ -9,15 +9,13 @@ export default class ProductInsert extends Component {
       let name = this.refs.name.value.trim();
       let photo = this.refs.photo.value.trim();
       let price = this.refs.price.value;
-      let description = this.refs.description.value.trim();
-      let volume = this.refs.volume.value.trim();
+
 
     let product = {
       name: name,
       image: photo,
       price: price,
-      description: description,
-      volume: volume
+
     }
 
     Meteor.call("insertProduct", product, function(error, result){
@@ -26,8 +24,6 @@ export default class ProductInsert extends Component {
 
               this.refs.name.value ="";
               this.refs.photo.value ="";
-              this.refs.description.value ="";
-              this.refs.volume.value ="";
               this.refs.price.value ="";
       }
       else{
@@ -59,18 +55,7 @@ export default class ProductInsert extends Component {
                 <input ref="price" type="number" className="form-control" id="inputPrice" placeholder="Product Price"/>
               </div>
             </div>
-            <div className="form-group">
-              <label htmlFor="inputDescription" className="col-sm-2 control-label">Description</label>
-              <div className="col-sm-10">
-                <input ref="description" type="text" className="form-control" id="inputDescription" placeholder="Product Description" />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="inputVolume" className="col-sm-2 control-label">Volume</label>
-              <div className="col-sm-10">
-                <input ref="volume" type="text" className="form-control" id="inputVolume" placeholder="Product Volume" />
-              </div>
-            </div>
+            
             <div className="form-group">
               <div className="col-sm-offset-2 col-sm-10">
                 <button onClick ={insertProduct} type="submit" className="btn btn-default">Submit</button>
